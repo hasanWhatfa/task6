@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <!-- bootstrap CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- fotnAwesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--
+    google fonts: 1-robot 2-lora -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- main css style sheet -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header class="bg-body-tertiary">
+            <nav class="navbar mainNavBar navbar-expand-lg bg-body-tertiary  w-100 z-3">
+                <div class="container-fluid justify-content-between py-2 px-4">
+                    <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt="" class="w-75"></a>
+                    <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon me-2"></span>MENU
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item mx-4">
+                                <a class="nav-link fs-6 text-uppercase active text-body-tertiary rounded" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item mx-4">
+                                <a class="nav-link fs-6 text-uppercase text-body-tertiary rounded" href="#">Featuerd</a>
+                            </li>
+                            <li class="nav-item mx-4">
+                                <a class="nav-link fs-6 text-uppercase text-body-tertiary rounded" href="#">Popular</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <section class="hero">
+                <div class="container-fluid w-100 h-100">
+                    <div id="carouselExampleCaptions" class="carousel slide w-100 h-100">
+                        <div class="carousel-inner mw-100 h-100">
+                            <div class="carousel-item active"> 
+                                <div class="d-flex align-items-center justify-content-center h-100">
+                                    <div class="row w-100 d-flex align-items-center justify-content-between p-5">
+                                        <div class="col-sm-12 col-md-6 col-bg-6 p-5 hero-text-container">
+                                            <div class="hero-text">
+                                                <p class="text-dark font-primary hero-heading w-100">
+                                                    Life Of The Wild
+                                                </p>
+                                                <p class="text-body-tertiary font-rob w-100 pe-5 lh-lg book-desc">
+                                                    life of the wild sit amet consectetur, adipisicing elit. Voluptas exercitationem molestias dolorum iure repudiandae labore blanditiis deleniti numquam
+                                                    .Et dolorem voluptate eos corporis nemo quasi.
+                                                </p>
+                                            </div>
+                                            <button class="btn btn-outline-primary px-4 py-1 color-brown readMoreBtn mt-5 rounded-0">READ MORE<i class="fa-solid fa-arrow-right ms-2"></i></button>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-bg-6 d-flex align-items-center justify-content-center">
+                                            <img src="./assets/images/main-banner1.jpg" class="d-block hero-book" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex align-items-center justify-content-center h-100">
+                                    <div class="row w-100 d-flex align-items-center justify-content-between p-5">
+                                        <div class="col-sm-12 col-md-6 col-bg-6 p-5 hero-text-container">
+                                            <div class="hero-text">
+                                                <p class="text-dark font-primary hero-heading w-100">
+                                                    Birds Gonna Be Happy
+                                                </p>
+                                                <p class="text-body-tertiary font-rob w-100 pe-5 lh-lg book-desc">
+                                                    Birds Gonna Be Happy sit amet consectetur, adipisicing elit. Voluptas exercitationem molestias dolorum iure repudiandae labore blanditiis deleniti numquam
+                                                    .Et dolorem voluptate eos corporis nemo quasi.
+                                                </p>
+                                            </div>
+                                            <button class="btn btn-outline-primary px-4 py-1 color-brown readMoreBtn mt-5 rounded-0">READ MORE<i class="fa-solid fa-arrow-right ms-2"></i></button>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-bg-6 d-flex align-items-center justify-content-center">
+                                            <img src="./assets/images/main-banner2.jpg" class="d-block hero-book" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="" aria-hidden="true"><i class="fa-solid fa-arrow-right text-dark previous-icon fs-5 rounded-circle p-2 shadow bg-dark-subtle"></i></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="" aria-hidden="true"><i class="fa-solid fa-arrow-right text-dark next-icon fs-5 rounded-circle p-2 shadow bg-dark-subtle"></i></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+    </header>
+    <main>
+        <section class="clients py-5">
+            <div class="container d-flex align-items-center justify-content-between">
+                <img src="./assets/images/client-image1.png" alt="">
+                <img src="./assets/images/client-image2.png" alt="">
+                <img src="./assets/images/client-image3.png" alt="">
+                <img src="./assets/images/client-image4.png" alt="">
+                <img src="./assets/images/client-image5.png" alt="">
+            </div>
+        </section>
+        <section class="featuredBooks bg-body-tertiary p-5">
+            <div class="container">
+                <div class="heading-T1 text-center py-4 my-3">
+                    <p class="text-body-tertiary text-uppercase mb-3 fs-6">some quality items</p>
+                    <div class="heading-typeOne-lines d-flex align-items-center justify-content-center">
+                        <div class="line bg-dark-subtle"></div>
+                        <h2 class="text-black text-capitalize fs-1 mx-5">featured Books</h2>
+                        <div class="line bg-dark-subtle"></div>
+                    </div>
+                </div>
+                <div class="feat-books d-flex align-items-center justify-content-between">
+                    
+                </div>
+                <div class="line bg-dark-subtle"></div>
+                <a href="#" class="text-black link-opacity-50-hover text-capitalize mt-5 fw-bold link-underline-opacity-0 link-underline d-flex align-items-center justify-content-end">
+                    view all products
+                    <i class="fa-solid fa-arrow-right text-dark fs-5 rounded-circle"></i>
+                </a>
+            </div>
+        </section>
+        <section class="bestsellingBook p-5">
+            <div class="best-bookContainer d-flex align-items-center w-50 justify-content-center mx-auto">
+                <div class="row">
+                    <div class="col-lg-5 col-md-12 col-sm-12">
+                        <div class="bookImage p-3 bg-dark-subtle d-flex align-items-center justify-content-center w-100">
+
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-12 col-sm-12">
+                        <div class="text-container py-4 ms-4 w-100">
+                            <div class="heading-T2 my-5">
+                                <h2 class="text-black text-capitalize typeTwoHeader">
+                                    best selling book
+                                </h2>
+                                <div class="line-t2">
+                                </div>
+                            </div>
+                            <p class="font-rob text-body-secondary my-3 text-capitalize bookAuthour"></p><!--book author from the api-->
+                            <h3 class="text-dark text-capitalize bookTitle"></h3><!--book title from api-->
+                            <p class="fs-6 text-body-secondary font-rob lh-lg bookDesc"></p>
+                            <a href="#" class="text-black link-opacity-50-hover text-capitalize mt-5 fw-bold link-underline-opacity-0 link-underline d-flex align-items-center justify-content-start">
+                                shop it now
+                                <i class="fa-solid fa-arrow-right text-dark fs-5 rounded-circle ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="popularBooks p-5 bg-body-tertiary">
+            <div class="container">
+                <div class="heading-T1 text-center py-4 my-3">
+                    <p class="text-body-tertiary text-uppercase mb-3 fs-6">some quality items</p>
+                    <div class="heading-typeOne-lines d-flex align-items-center justify-content-center">
+                        <div class="line bg-dark-subtle"></div>
+                        <h2 class="text-black text-capitalize fs-1 mx-5">popular books</h2>
+                        <div class="line bg-dark-subtle"></div>
+                    </div>
+                </div>
+                <div class="books-tabs">
+                    <div class="books-tabs d-flex align-items-center justify-content-center flex-column">
+                        <ul class="nav mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active tabs-item font font-primary fw-bold text-body-secondary text-capitalize ms-3 font-rob" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">all gener</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link tabs-item font font-primary fw-bold text-body-secondary text-capitalize ms-3 font-rob" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">business</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link tabs-item font font-primary fw-bold text-body-secondary text-capitalize ms-3 font-rob" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">technology</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link tabs-item font font-primary fw-bold text-body-secondary text-capitalize ms-3 font-rob" id="pills-romantic-tab" data-bs-toggle="pill" data-bs-target="#pills-romantic" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">romantic</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link tabs-item font font-primary fw-bold text-body-secondary text-capitalize ms-3 font-rob" id="pills-adventure-tab" data-bs-toggle="pill" data-bs-target="#pills-adventure" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">adventure</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link tabs-item  font font-primary fw-bold text-body-secondary text-capitalize ms-3 font-rob" id="pills-fictional-tab" data-bs-toggle="pill" data-bs-target="#pills-fictional" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">fictional</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane first-tab fade show active " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <div class="row w-100 h-100 mx-auto">
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                two
+                            </div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                three
+                            </div>
+                            <div class="tab-pane fade" id="pills-romantic" role="tabpanel" aria-labelledby="pills-romantic-tab">
+                                four
+                            </div>
+                            <div class="tab-pane fade" id="pills-adventure" role="tabpanel" aria-labelledby="pills-adventure-tab">
+                                five
+                            </div>
+                            <div class="tab-pane fade" id="pills-fictional" role="tabpanel" aria-labelledby="pills-fictional-tab">
+                                six
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact p-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 p-4 ps-0">
+                        <div class="heading-T2 my-5">
+                            <h2 class="text-black text-capitalize typeTwoHeader">
+                                subscibe to <br>our newletter
+                            </h2>
+                            <div class="line-t2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 p-5 pe-0 contact-text">
+                        <div class="text">
+                            <p class="text-body-secondary font-rob">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit
+                                .Laudantium minima corrupti quia excepturi sunt veritatis est et perspiciatis.
+                            </p>
+                            <div class="mb-3 position-relative">
+                                <label for="exampleFormControlInput1" class="form-label text-body-secondary font-rob">Enter your email address here</label>
+                                <input type="email" class="form-control contact-inputborder border-0 font-rob" id="exampleFormControlInput1">
+                                <button class="btn btn-outline-primary position-absolute top-0 end-0 text-black text-uppercase fw-bold border border-0 contact-submit">send <i class="fa-solid fa-paper-plane ms-2"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="pt-5 px-5 pb-3 bg-body-tertiary font-rob">
+        <div class="container py-1 bg-body-tertiary">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 text-left mb-md-4">
+                    <div class="mb-5 w-100 d-flex align-items-center justify-content-center">
+                        <img src="./assets/images/logo.png" alt="">
+                    </div>
+                    <p class="font-small lh-lg text-black-50 text-center px-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        In repellendus laboriosam voluptas, sint necessitatibus hic aliquid molestias, accusamus sunt architecto
+                        veritatis at numquam assumenda.
+                    </p>
+                </div>
+                <div class="col-lg-8 col-md-12 col-sm-8">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 mb-md-4 text-center">
+                            <p class="fs-4 fw-bold text-body-secondary my-4 pb-3 font-primary">About us</p>
+                            <p class="mb-4"><a href="#" class=" text-decoration-none fw-bold text-body-secondary">vision</a></p>
+                            <p class="mb-4"><a href="#" class=" text-decoration-none fw-bold text-body-secondary">artecils</a></p>
+                            <p class="mb-4"><a href="#" class=" text-decoration-none fw-bold text-body-secondary">Services</a></p>
+                            <p class="mb-4"><a href="#" class=" text-decoration-none fw-bold text-body-secondary">career</a></p>
+                            <p class="mb-4"><a href="#" class=" text-decoration-none fw-bold text-body-secondary">service term</a></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-md-4 text-center">
+                            <p class="fs-4 fw-bold text-body-secondary my-4 pb-3 font-primary">Discover</p>
+                            <p class="mb-4"><a href="#" class="text-capitalize fw-bold text-decoration-none text-body-secondary">Home</a></p>
+                            <p class="mb-4"><a href="#" class="text-capitalize fw-bold text-decoration-none text-body-secondary">Books</a></p>
+                            <p class="mb-4"><a href="#" class="text-capitalize fw-bold text-decoration-none text-body-secondary">authors</a></p>
+                            <p class="mb-4"><a href="#" class="text-capitalize fw-bold text-decoration-none text-body-secondary">subjects</a></p>
+                            <p class="mb-4"><a href="#" class="text-capitalize fw-bold text-decoration-none text-body-secondary">Advanced Search</a></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-md-4 text-center">
+                            <p class="fs-4 fw-bold text-body-secondary my-4 pb-3 font-primary">My Account</p>
+                            <p class="mb-4"><a href="#" class="text-capitalize fw-bold text-decoration-none text-body-secondary">Sign In</a></p>
+                            <p class="mb-4"><a href="#" class="text-capitalize fw-bold text-decoration-none text-body-secondary">View Cart</a></p>
+                            <p class="mb-4"><a href="#" class="text-capitalize fw-bold text-decoration-none text-body-secondary">My Wishlist</a></p>
+                            <p class="mb-4"><a href="#" class="text-capitalize fw-bold text-decoration-none text-body-secondary">Track My Order</a></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-md-4 text-center">
+                            <p class="fs-4 fw-bold text-body-secondary my-4 pb-3 font-primary">Help</p>
+                            <p class="mb-4"><a href="#" class="text-capitalize fw-bold text-decoration-none text-body-secondary">Help Center</a></p>
+                            <p class="mb-4"><a href="#" class="text-capitalize fw-bold text-decoration-none text-body-secondary">Report A Problem</a></p>
+                            <p class="mb-4"><a href="#" class="text-capitalize fw-bold text-decoration-none text-body-secondary">Sugessting edits</a></p>
+                            <p class="mb-4"><a href="#" class="text-capitalize fw-bold text-decoration-none text-body-secondary">Contact Us</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="line bg-dark-subtle"></div>
+            </div>
+            <div class="row text-center">
+                <div class="footerSomethin d-flex align-items-center justify-content-between">
+                    <p class="text-body-tertiary">
+                    @ 2022 all right reserved .free html template By <a href="#" class="text-decoration-none text-black-50">Hurry</a>
+                    </p>
+                    <div class="footer-icons">
+                        <a href="#" class="text-black ms-3"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="text-black ms-3"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="text-black ms-3"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="text-black ms-3"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- bootstrap js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- main js file -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
